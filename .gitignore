@@ -1,2 +1,7 @@
 # Added by dotagent: ignore exported AI rule files
 .rules
+
+# Added by dotagent: ignore exported AI rule files
+GEMINI.md
+
+dist/

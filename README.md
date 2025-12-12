@@ -51,6 +51,20 @@ slidev presentation.md
 
 # Презентация откроется на http://localhost:3030
 ```
+## 🐳 Запуск с Docker
+
+```bash
+# Сборка Docker образа
+docker build -t slidev-presentation .
+
+# Запуск контейнера
+docker run -d --name slidev-presentation -p 3030:3030 slidev-presentation
+
+# Остановка и удаление контейнера
+docker rm -f slidev-presentation
+```
+
+Презентация будет доступна по адресу http://localhost:3030
 
 ### Экспорт презентации
 
