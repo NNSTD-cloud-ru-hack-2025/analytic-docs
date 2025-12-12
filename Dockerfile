@@ -7,7 +7,7 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-RUN npm install -g @slidev/cli @slidev/theme-default
+RUN npm install -g @slidev/cli @slidev/theme-default vite
 
 COPY presentation.md ./
 COPY demo/demo.mp4 ./demo/
@@ -17,4 +17,4 @@ RUN slidev build presentation.md
 
 EXPOSE 3030
 
-CMD ["npx","vite","preview","--port","3030","--host"]
+CMD ["vite","preview","--port","3030","--host","0.0.0.0"]
