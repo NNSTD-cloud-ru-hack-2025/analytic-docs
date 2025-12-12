@@ -17,4 +17,6 @@ RUN slidev build presentation.md
 
 EXPOSE 3030
 
+ENV __VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS="*"
+
 CMD ["vite","preview","--port","3030","--host","0.0.0.0"]
