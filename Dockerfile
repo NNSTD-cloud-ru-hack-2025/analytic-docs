@@ -11,12 +11,12 @@ RUN npm install -g @slidev/cli @slidev/theme-default vite
 
 COPY presentation.md ./
 COPY demo/demo.mp4 ./demo/
-COPY resources/main_slide.jpg ./resources/
+COPY public/main_slide.jpg ./public/
 
 RUN slidev build presentation.md
 
 EXPOSE 3030
 
-ENV __VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS="*"
+ENV __VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS="nnstd.internal.containers.cloud.ru"
 
 CMD ["vite","preview","--port","3030","--host","0.0.0.0"]

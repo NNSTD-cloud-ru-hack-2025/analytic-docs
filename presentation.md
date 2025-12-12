@@ -1,6 +1,6 @@
 ---
 theme: default
-background: /resources/main_slide.jpg
+background: /main_slide.jpg
 class: text-center
 highlighter: shiki
 lineNumbers: false
